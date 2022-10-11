@@ -1,0 +1,36 @@
+body {
+    font-family: sans-serif;
+    color: #51050F;
+    background-color: #FF9F29;
+    text-align: center;
+}
+body > div {
+    display: flex;
+    flex-direction: column;
+    flex-direction: wrap;
+}
+h1 {
+    font-size: 1.5rem;
+    padding: 1rem;
+    background-color: #E02401;
+    color: white;
+}
+
+body > div > div {
+    margin: 1rem;
+    text-shadow: 0.5px 0.5px 2px #E02401;
+    color: white;
+    background-color: #F78812;
+    font-size: small;
+}
+
+@media screen and (min-width: 768px) {
+    body > div{
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+    body > div > div {
+        padding: 0.5rem;
+        flex-basis: 30%;
+    }
+}
